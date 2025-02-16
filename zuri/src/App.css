@@ -1,0 +1,144 @@
+/* Centered container for the welcome page */
+.welcome-container {
+  text-align: center;
+  padding-top: 80px; /* Increased padding to prevent logo cut-off */
+}
+
+/* Logo styling */
+.logo {
+  max-width: 250px; /* Ensures the logo resizes properly */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* Centers and adds space below */
+}
+
+/* Welcome text */
+.welcome-text {
+  color: #D9B99F;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Authentication section (Vendors & Patrons) */
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+}
+
+/* Vendor and Patron Boxes */
+.auth-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px; 
+  min-width: 300px;
+}
+
+/* Vendor and Patron Titles */
+.auth-box h2 {
+  color: #D9B99F;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Buttons inside Vendor & Patron sections */
+.btn {
+  display: block;
+  background-color: #D9B99F;
+  color: white;
+  padding: 12px; /* Adjusted padding */
+  margin: 8px auto; /* Keeps spacing even */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 90%; /* Ensures buttons fit inside the box */
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b68c76;
+}
+
+/* About Section */
+.about-section {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #f2e7dd;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-section h2 {
+  color: #D9B99F;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #5a4d42;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About section columns */
+.about-columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.about-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.about-box h3 {
+  color: #D9B99F;
+  font-size: 20px;
+}
+
+.about-box p {
+  font-size: 14px;
+  color: #5a4d42;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .auth-box {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .about-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-box {
+    width: 90%;
+  }
+}
+
